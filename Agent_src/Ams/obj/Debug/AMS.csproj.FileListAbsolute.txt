@@ -1,0 +1,82 @@
+H:\Dialogic\AMS\AMS\bin\Debug\AMS.exe
+H:\Dialogic\AMS\AMS\bin\Debug\AMS.pdb
+H:\Dialogic\AMS\AMS\obj\Debug\ResolveAssemblyReference.cache
+H:\Dialogic\AMS\AMS\obj\Debug\AMS.frmMain.resources
+H:\Dialogic\AMS\AMS\obj\Debug\AMS.Properties.Resources.resources
+H:\Dialogic\AMS\AMS\obj\Debug\AMS.csproj.GenerateResource.Cache
+H:\Dialogic\AMS\AMS\obj\Debug\AMS.exe
+H:\Dialogic\AMS\AMS\obj\Debug\AMS.pdb
+H:\Dialogic\AMS\AMS\obj\Debug\AMS.frmLogin.resources
+I:\DDX_operator\AMS\AMS\obj\Debug\AMS.exe
+I:\DDX_operator\AMS\AMS\obj\Debug\AMS.pdb
+I:\DDx\DDX_operator\AMS\AMS\obj\Debug\AMS.exe
+I:\DDx\DDX_operator\AMS\AMS\obj\Debug\AMS.pdb
+I:\DDx\DDX_operator\AMS\AMS\bin\Debug\AMS.exe
+I:\DDx\DDX_operator\AMS\AMS\bin\Debug\AMS.pdb
+I:\DDx\DDX_operator\AMS\AMS\obj\Debug\ResolveAssemblyReference.cache
+I:\DDx\DDX_operator\AMS\AMS\obj\Debug\AMS.frmLogin.resources
+I:\DDx\DDX_operator\AMS\AMS\obj\Debug\AMS.frmMain.resources
+I:\DDx\DDX_operator\AMS\AMS\obj\Debug\AMS.Properties.Resources.resources
+I:\DDx\DDX_operator\AMS\AMS\obj\Debug\AMS.csproj.GenerateResource.Cache
+C:\Documents and Settings\mojtaba\Desktop\AMS\AMS\obj\Debug\AMS.exe
+C:\Documents and Settings\mojtaba\Desktop\AMS\AMS\obj\Debug\AMS.pdb
+C:\Documents and Settings\mojtaba\Desktop\AMS\AMS\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\mojtaba\Desktop\AMS\AMS\obj\Debug\AMS.frmLogin.resources
+C:\Documents and Settings\mojtaba\Desktop\AMS\AMS\obj\Debug\AMS.frmMain.resources
+C:\Documents and Settings\mojtaba\Desktop\AMS\AMS\obj\Debug\AMS.Properties.Resources.resources
+C:\Documents and Settings\mojtaba\Desktop\AMS\AMS\obj\Debug\AMS.csproj.GenerateResource.Cache
+C:\Documents and Settings\mojtaba\Desktop\AMS\AMS\bin\Debug\AMS.exe
+C:\Documents and Settings\mojtaba\Desktop\AMS\AMS\bin\Debug\AMS.pdb
+C:\Documents and Settings\mojtaba\Desktop\AMS\AMS\obj\Debug\AMS.frmAddPhone.resources
+E:\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.exe
+E:\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.pdb
+E:\DDX_operator 890627\AMS\AMS\bin\Debug\AMS.exe
+E:\DDX_operator 890627\AMS\AMS\bin\Debug\AMS.pdb
+E:\DDX_operator 890627\AMS\AMS\obj\Debug\ResolveAssemblyReference.cache
+E:\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.frmAddPhone.resources
+E:\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.frmLogin.resources
+E:\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.frmMain.resources
+E:\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.Properties.Resources.resources
+E:\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.csproj.GenerateResource.Cache
+E:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.exe
+E:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.pdb
+E:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\ResolveAssemblyReference.cache
+E:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.frmAddPhone.resources
+E:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.frmLogin.resources
+E:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.frmMain.resources
+E:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.Properties.Resources.resources
+E:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.csproj.GenerateResource.Cache
+E:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\bin\Debug\AMS.exe
+E:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\bin\Debug\AMS.pdb
+D:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\bin\Debug\AMS.exe
+D:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\bin\Debug\AMS.pdb
+D:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\ResolveAssemblyReference.cache
+D:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.frmAddPhone.resources
+D:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.frmLogin.resources
+D:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.frmMain.resources
+D:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.Properties.Resources.resources
+D:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.csproj.GenerateResource.Cache
+D:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.exe
+D:\DDX_operator 890627\DDX_operator 890627\AMS\AMS\obj\Debug\AMS.pdb
+C:\Users\mojtaba\Desktop\AGentCom\AMS\obj\Debug\AMS.exe
+C:\Users\mojtaba\Desktop\AGentCom\AMS\obj\Debug\AMS.pdb
+C:\Users\mojtaba\Desktop\AGentCom\AMS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mojtaba\Desktop\AGentCom\AMS\obj\Debug\AMS.frmAddPhone.resources
+C:\Users\mojtaba\Desktop\AGentCom\AMS\obj\Debug\AMS.frmLogin.resources
+C:\Users\mojtaba\Desktop\AGentCom\AMS\obj\Debug\AMS.frmMain.resources
+C:\Users\mojtaba\Desktop\AGentCom\AMS\obj\Debug\AMS.Properties.Resources.resources
+C:\Users\mojtaba\Desktop\AGentCom\AMS\obj\Debug\AMS.csproj.GenerateResource.Cache
+C:\Users\mojtaba\Desktop\AGentCom\AMS\bin\Debug\AMS.exe
+C:\Users\mojtaba\Desktop\AGentCom\AMS\bin\Debug\AMS.pdb
+C:\Users\mojtaba\Desktop\AGentCom\AMS\obj\Debug\AMS.frmAddNumber.resources
+D:\AGentCom\AMS\obj\Debug\AMS.exe
+D:\AGentCom\AMS\obj\Debug\AMS.pdb
+D:\AGentCom\AMS\bin\Debug\AMS.exe
+D:\AGentCom\AMS\bin\Debug\AMS.pdb
+D:\AGentCom\AMS\obj\Debug\ResolveAssemblyReference.cache
+D:\AGentCom\AMS\obj\Debug\AMS.frmAddNumber.resources
+D:\AGentCom\AMS\obj\Debug\AMS.frmAddPhone.resources
+D:\AGentCom\AMS\obj\Debug\AMS.frmLogin.resources
+D:\AGentCom\AMS\obj\Debug\AMS.frmMain.resources
+D:\AGentCom\AMS\obj\Debug\AMS.Properties.Resources.resources
+D:\AGentCom\AMS\obj\Debug\AMS.csproj.GenerateResource.Cache

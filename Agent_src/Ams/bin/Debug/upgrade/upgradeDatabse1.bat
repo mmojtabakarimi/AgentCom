@@ -1,0 +1,1 @@
+isqlw -S mojtaba-pc\SQLS2000 -d Agent_db -U agent_db -P agent2500 -i upgradeDatabse1.sql -o ResulSqlUpg.txt 

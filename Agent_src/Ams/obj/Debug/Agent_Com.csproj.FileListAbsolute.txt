@@ -1,0 +1,12 @@
+D:\pabx_soft\last\AGentCom\AMS\bin\Debug\AMS.exe
+D:\pabx_soft\last\AGentCom\AMS\bin\Debug\AMS.pdb
+D:\pabx_soft\last\AGentCom\AMS\obj\Debug\ResolveAssemblyReference.cache
+D:\pabx_soft\last\AGentCom\AMS\obj\Debug\AMS.frmAddNumber.resources
+D:\pabx_soft\last\AGentCom\AMS\obj\Debug\AMS.frmAddPhone.resources
+D:\pabx_soft\last\AGentCom\AMS\obj\Debug\AMS.frmAgentStatus.resources
+D:\pabx_soft\last\AGentCom\AMS\obj\Debug\AMS.frmLogin.resources
+D:\pabx_soft\last\AGentCom\AMS\obj\Debug\AMS.frmMain.resources
+D:\pabx_soft\last\AGentCom\AMS\obj\Debug\AMS.Properties.Resources.resources
+D:\pabx_soft\last\AGentCom\AMS\obj\Debug\Agent_Com.csproj.GenerateResource.Cache
+D:\pabx_soft\last\AGentCom\AMS\obj\Debug\AMS.exe
+D:\pabx_soft\last\AGentCom\AMS\obj\Debug\AMS.pdb
