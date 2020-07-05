@@ -156,6 +156,7 @@ namespace AgentCom
         public static string speedPhone; 
         public static string speedName;
         public static string phoneBookSearchPhone;
+        public static string phoneBookSearchName;
         public static string operatorRedialPhoneNumber;
         public static bool frmCompanyLoginFlag = false;
         public static bool pickupCall = false;

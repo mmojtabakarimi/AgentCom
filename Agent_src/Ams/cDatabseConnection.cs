@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace AgentCom
 {
-    class cDatabseConnection
+    public class cDatabseConnection
     {
 
         private DataSet dsTemp = new DataSet();
@@ -53,7 +53,7 @@ namespace AgentCom
             dataConnection.ConnectionString = connectionString;
             SqlCommand datacommand = new SqlCommand();
             if(tblName == "tblPhoneBook")
-                datacommand.CommandText = string.Format("Select * from {0} order by [name]", tblName);
+                datacommand.CommandText = string.Format("Select * from {0} order by [id]", tblName);
             else
                 if(tblName == "tblAnalogTrunk")
                     datacommand.CommandText = string.Format("Select * from {0} where portType= {1} order by port", tblName,2);
@@ -255,6 +255,35 @@ namespace AgentCom
                         slotNo.ToString() + "','" +
                         portNo.ToString() + "','" +
                         state.ToString() + "'", ref Message);
+                }
+            }
+            catch (Exception ee)
+            {
+                Success = false;
+                //            Message = ee;
+            }
+            finally
+            {
+                //               if (!Success)
+                //                  logdata.LogError(ID, Route + ">>" + "InsertNumberingData", Message.ToString());
+            }
+            return Success;
+        }
+        //update  index  coloumn  of  phonebook  table  equal  with gridview index  column 
+        public bool UpdatePhoneBookIndex(string id, int index, ref string Message)
+        {
+            bool Success = true;
+
+            try
+            {
+                lock (this)
+                {
+
+                    //Set data into databases
+                    Success = this.UpdateData(
+                        "pr_updatePhoneBookIndex;1 '" +
+                        id + "','" +
+                        index.ToString() + "'", ref Message);
                 }
             }
             catch (Exception ee)

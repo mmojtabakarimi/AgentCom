@@ -178,11 +178,13 @@ namespace AgentCom
         private void dgvDigitalTrunkrefresh()
         {
             //indexScroll = dgvSub.FirstDisplayedScrollingRowIndex;
+            int count = 0;
             cDatabseConnection dbTemp = new cDatabseConnection();
             dsDigitalTrunk = dbTemp.Refresh("tblDigitalTrunk", "Agent_Db");
 
 
             DataTable dt = new DataTable();
+            dt.Columns.Add("ردیف");
             dt.Columns.Add("پورت");
             dt.Columns.Add("وضعیت");
             dt.Columns.Add("مخاطب");
@@ -191,9 +193,13 @@ namespace AgentCom
 
             foreach (DataRow dr in dsDigitalTrunk.Tables[0].Rows)
             {
+
+
                 if (dr["phone"].ToString().Trim() == "0")
                     continue;
                 dd = dt.NewRow();
+                count++;
+                dd["ردیف"] = count.ToString();
                 dd["پورت"] = dr["phone"].ToString().Trim();
                 dd["وضعیت"] = Int32.Parse(dr["state"].ToString().Trim());
 
@@ -205,6 +211,7 @@ namespace AgentCom
             this.dgvDigitalTrunk.DataSource = dt;
             dgvDigitalTrunk.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvDigitalTrunk.Columns["وضعیت"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.dgvDigitalTrunk.Columns["ردیف"].Width = 35;
             this.dgvDigitalTrunk.Columns["پورت"].Width = 75;
             this.dgvDigitalTrunk.Columns["مخاطب"].Width = 105;
 

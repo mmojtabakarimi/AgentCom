@@ -42,7 +42,7 @@ namespace AgentCom
         private DataSet dsMissedCall = new DataSet();
         private DataSet dsTemp = new DataSet();
 
-        cDatabseConnection cDB;
+        public static cDatabseConnection cDB;
         private string Message1 = "";
         public byte opertatorState;
         int connectionStateCntr = 20 ;
@@ -338,7 +338,7 @@ namespace AgentCom
                             cphoneNo1 = GetNumber(cphoneNo1);
 
                             UpdateAnalogTrunkState(phoneNo, "0", RxData[19].ToString());
-                            Console.WriteLine("port:{0},st:{1} ", phoneNo, RxData[19]);
+                            Console.WriteLine("2port:{0},st:{1} ", phoneNo, RxData[19]);
                             if (RxData[19] == 4)
                                // MessageBox.Show(string.Format("port:{0},st:{1} bpt:{2} ", phoneNo, RxData[19], cphoneNo1));
                                 UpdateAnalogTrunkBparty(phoneNo, "0", cphoneNo1);
@@ -522,6 +522,7 @@ namespace AgentCom
                             lblConectionState.Text = "ارتباط وصل می باشد";
                             lblConectionState.BackColor = Color.Green;
                             connectionStateCntr = 0;
+                            
                             break;
                         default:
                             break;
@@ -540,48 +541,54 @@ namespace AgentCom
                 string digit = "";
                 if ((RxData[0] == 0x01) && (RxData[1] == 0x2d))
                 {
-                     byte  shelfNo = RxData[6];
-                     byte slotNo = RxData[7];
-                     byte portNo = RxData[8];
+                    byte shelfNo = RxData[6];
+                    byte slotNo = RxData[7];
+                    byte portNo = RxData[8];
 
-                     switch (msg)
-                     {
-                         case 0x01://line state
-                             byte state = RxData[10];
-                             UpdateAnalogExtensionState(shelfNo, slotNo, portNo, state);
-                             UpdateAnalogExtensionTime(shelfNo, slotNo, portNo, DateTime.Now.ToString("HH:mm:ss"));
-                             if ((state == 0) || (state == 41))
-                                 ClearAnalogExtensionBparty(shelfNo, slotNo, portNo, digit);
-                             //if (state == 3) add for show aparty for called party
-                               //  updateAnalogExtensionAparty(shelfNo, slotNo, portNo);
-                             ///Console.WriteLine("shn:{0},sn:{1},pn:{2} -->st:{3} ", shelfNo, slotNo, portNo, state);
-                             break;
-                         case 0x0c://line send digit
-                             switch (RxData[10])
-                             {
-                                 case 0x0a:
-                                     digit = "0";
-                                     break;
-                                 case 0x0b:
-                                     digit = "*";
-                                     break;
-                                 case 0x0c:
-                                     digit = "#";
-                                     break;
-                                 default:
-                                     digit = RxData[10].ToString(); 
-                                     break;
+                    switch (msg)
+                    {
+                        case 0x01://line state
+                            byte state = RxData[10];
+                            UpdateAnalogExtensionState(shelfNo, slotNo, portNo, state);
+                            UpdateAnalogExtensionTime(shelfNo, slotNo, portNo, DateTime.Now.ToString("HH:mm:ss"));
+                            if ((state == 0) || (state == 41))
+                                ClearAnalogExtensionBparty(shelfNo, slotNo, portNo, digit);
+                            //if (state == 3) add for show aparty for called party
+                            //  updateAnalogExtensionAparty(shelfNo, slotNo, portNo);
+                            ///Console.WriteLine("shn:{0},sn:{1},pn:{2} -->st:{3} ", shelfNo, slotNo, portNo, state);
+                            break;
+                        case 0x0c://line send digit
+                            switch (RxData[10])
+                            {
+                                case 0x0a:
+                                    digit = "0";
+                                    break;
+                                case 0x0b:
+                                    digit = "*";
+                                    break;
+                                case 0x0c:
+                                    digit = "#";
+                                    break;
+                                default:
+                                    digit = RxData[10].ToString();
+                                    break;
 
-                             }
-                                
+                            }
 
-                             UpdateAnalogExtensionBparty(shelfNo, slotNo, portNo, digit);
+
+                            UpdateAnalogExtensionBparty(shelfNo, slotNo, portNo, digit);
                             // Console.WriteLine("shn:{0},sn:{1},pn:{2} -->Digit:{3} ", shelfNo, slotNo, portNo, digit);
-                             break;
+                            break;
 
-                         default: break;
-                     }
+                        default:
+                            break;
+                    }
 
+                }
+                else
+                {
+
+                    Console.WriteLine("{0}", RxData[19]);
                 }
 
 
@@ -1584,6 +1591,8 @@ namespace AgentCom
 
 
                 dt.Rows.Add(dd);
+                //it  must  be  updated index  colume  in  tale  equal  to  view  index
+                cDB.UpdatePhoneBookIndex(dr["id"].ToString().Trim(), count, ref Message1);
             }
             this.lblPhonebookCount.Text = count.ToString();
             this.dgvPhoneBook.DataSource = dt;
@@ -1602,8 +1611,11 @@ namespace AgentCom
             Application.DoEvents();
             /*if (dgvTrunkAcdQeue.RowCount > 0)
                 dgvTrunkAcdQeue.Rows[0].Selected = true;*/
+            dsPhoneBook = dbTemp.Refresh("tblPhoneBook", "Agent_DB");
 
         }
+         
+
        //****************************************
         public void dgvTrunkAcdQeueRefresh()
         {
@@ -3185,8 +3197,11 @@ namespace AgentCom
             bool result;
             for (int indx = 0; indx < dgvPhoneBook.Rows.Count; indx++)
             {
+                
+
                 if (dgvPhoneBook.Rows[indx].Selected)
                 {
+                    
                     CGlobal.phonebookIndex = int.Parse(dsPhoneBook.Tables[0].Rows[indx]["index"].ToString().Trim());
              //       CGlobal.phonebookType = dsPhoneBook.Tables[0].Rows[indx]["type"].ToString();
                     CGlobal.phonebookName = dsPhoneBook.Tables[0].Rows[indx]["name"].ToString();

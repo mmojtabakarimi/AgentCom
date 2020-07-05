@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnDial = new System.Windows.Forms.Button();
             this.dgvPhoneBookSearch = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblPhonBookSearch = new System.Windows.Forms.Label();
@@ -40,20 +40,21 @@
             this.txtSearchByPhone = new System.Windows.Forms.TextBox();
             this.txtSearchByJob = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnEditFromSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhoneBookSearch)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnCancel
+            // btnDial
             // 
-            this.btnCancel.Location = new System.Drawing.Point(2, 388);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(101, 34);
-            this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "شماره  گیری";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnDial.Location = new System.Drawing.Point(2, 388);
+            this.btnDial.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnDial.Name = "btnDial";
+            this.btnDial.Size = new System.Drawing.Size(101, 34);
+            this.btnDial.TabIndex = 4;
+            this.btnDial.Text = "شماره  گیری";
+            this.btnDial.UseVisualStyleBackColor = true;
+            this.btnDial.Click += new System.EventHandler(this.btnDial_Click);
             // 
             // dgvPhoneBookSearch
             // 
@@ -157,6 +158,17 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnEditFromSearch
+            // 
+            this.btnEditFromSearch.Location = new System.Drawing.Point(170, 409);
+            this.btnEditFromSearch.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnEditFromSearch.Name = "btnEditFromSearch";
+            this.btnEditFromSearch.Size = new System.Drawing.Size(101, 34);
+            this.btnEditFromSearch.TabIndex = 4;
+            this.btnEditFromSearch.Text = "ویرایش";
+            this.btnEditFromSearch.UseVisualStyleBackColor = true;
+            this.btnEditFromSearch.Click += new System.EventHandler(this.btnEditFromSearch_Click);
+            // 
             // frmPhoneBookSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -172,7 +184,8 @@
             this.Controls.Add(this.txtSearchByName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnEditFromSearch);
+            this.Controls.Add(this.btnDial);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmPhoneBookSearch";
@@ -189,7 +202,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnDial;
         private System.Windows.Forms.DataGridView dgvPhoneBookSearch;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
@@ -201,5 +214,6 @@
         private System.Windows.Forms.TextBox txtSearchByPhone;
         private System.Windows.Forms.TextBox txtSearchByJob;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnEditFromSearch;
     }
 }
